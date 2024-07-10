@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect-4 game</title>
+    <link rel="icon" href="../src/logo.svg">
+    <!-- <link rel="stylesheet" media="only screen and (max-width: 400px)" href="mobile.css" /> -->
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+    <header>
+        <div class="inside-header">
+            <button id="menu" class="header-btn">MENU</button>
+            <img src="../src/logo.svg" alt="logo">
+            <button id="restart" class="header-btn">RESTART</button>
+        </div>
+    </header>
+    <div class="load-pop">
+        <div class="popup">
+            <img src="../src/logo.svg" alt="">
+            <button>PLAY VS CPU</button>
+            <button>PLAY VS PLAYER</button>
+            <button>GAME RULES</button>
+        </div>
+    </div>
+    <div class="GameRules-popup">
+        <div class="popup">
+            <h3>RULES</h3>
+            <h5>OBJECTIVES</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque excepturi placeat fugit! Maxime, quas pariatur.</p>
+            <h5>HOW TO PLAY</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, culpa?</li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div class="player-1-scorecard score-card">
+            <img src="../src/player-one.svg" class="face"alt="">
+            <div class="msg">
+                <p>YOU</p>
+                <p id="score-1" class="score">0</p>
+            </div>
+        </div>
+        <div id="game-container">
+            <div class="col">
+                <div class="circle circle-1-1"></div>
+                <div class="circle circle-2-1"></div>
+                <div class="circle circle-3-1"></div>
+                <div class="circle circle-4-1"></div>
+                <div class="circle circle-5-1"></div>
+                <div class="circle circle-6-1"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-2"></div>
+                <div class="circle circle-2-2"></div>
+                <div class="circle circle-3-2"></div>
+                <div class="circle circle-4-2"></div>
+                <div class="circle circle-5-2"></div>
+                <div class="circle circle-6-2"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-3"></div>
+                <div class="circle circle-2-3"></div>
+                <div class="circle circle-3-3"></div>
+                <div class="circle circle-4-3"></div>
+                <div class="circle circle-5-3"></div>
+                <div class="circle circle-6-3"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-4"></div>
+                <div class="circle circle-2-4"></div>
+                <div class="circle circle-3-4"></div>
+                <div class="circle circle-4-4"></div>
+                <div class="circle circle-5-4"></div>
+                <div class="circle circle-6-4"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-5"></div>
+                <div class="circle circle-2-5"></div>
+                <div class="circle circle-3-5"></div>
+                <div class="circle circle-4-5"></div>
+                <div class="circle circle-5-5"></div>
+                <div class="circle circle-6-5"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-6"></div>
+                <div class="circle circle-2-6"></div>
+                <div class="circle circle-3-6"></div>
+                <div class="circle circle-4-6"></div>
+                <div class="circle circle-5-6"></div>
+                <div class="circle circle-6-6"></div>
+            </div>
+            <div class="col">
+                <div class="circle circle-1-7"></div>
+                <div class="circle circle-2-7"></div>
+                <div class="circle circle-3-7"></div>
+                <div class="circle circle-4-7"></div>
+                <div class="circle circle-5-7"></div>
+                <div class="circle circle-6-7"></div>
+            </div>
+            <div id="timer-board">
+                <p>YOUR TURN</p>
+                <p class="countdown">10S</p>
+            </div>
+        </div>
+        <div class="player-2-scorecard score-card">
+            <img src="../src/player-two.svg" class="face" alt="">
+            <div class="msg">
+                <p>CPU</p>
+                <p id="score-2" class="score">0</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

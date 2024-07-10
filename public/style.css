@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #4535c1;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.inside-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+header img {
+  height: 40px;
+  transition: 0.3s;
+}
+
+header img:hover {
+  scale: 1.2;
+}
+.header-btn {
+  background-color: #36c2ce;
+  padding: 10px;
+  width: 7rem;
+  border-radius: 20px;
+  color: #fff;
+  transition: 0.3s;
+  border: none;
+}
+.header-btn:hover {
+  scale: 1.1;
+}
+
+.popup {
+  display: none;
+}
+
+.score-card:hover {
+  scale: 1.2;
+}
+.score-card img {
+  height: 40px;
+}
+.face {
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+.score {
+  margin-top: 20px;
+  font-weight: 200;
+  font-size: 30px;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.score-card {
+  width: 120px;
+  height: 140px;
+  flex-direction: column;
+  background-color: aliceblue;
+  text-align: center;
+  margin-top: 15%;
+  line-height: 1;
+  border-radius: 15%;
+  transition: 0.3s;
+}
+
+#game-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 450px;
+  background-color: #fff;
+  margin: 40px 0 0 0;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  gap: 10%;
+}
+
+#game-container .circle {
+  border-radius: 50%;
+  background-color: #4535c1;
+  opacity: 60%;
+  box-shadow: 5px 5px 5px 1px silver;
+  height: 45px;
+  width: 45px;
+  margin-top: 14px;
+}
+
+#timer-board {
+  width: 200px;
+  background-color: violet;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+  color: #fff;
+}
+
+.countdown {
+  font-size: 2rem;
+}
+
+#game-container .col {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 2px;
+}
+.col:hover {
+  box-shadow: 0 0 20px 1px lightgrey inset;
+  cursor:pointer;
+}
+
+@media (min-width: 1496px) and (max-width: 1904px) {
+  #game-container {
+    gap: 8%;
+  }
+}
+
+@media (min-width: 1372px) and (max-width: 1512px) {
+  #game-container {
+    gap: 6%;
+  }
+}
+
+@media (min-width: 1324px) and (max-width: 1372px) {
+  #game-container {
+    gap: 5%;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1320px) {
+  #game-container {
+    gap: 3%;
+  }
+}
+
+@media (min-width: 796px) and (max-width: 1060px) {
+  #game-container {
+    gap: 2%;
+  }
+}
+
+@media (min-width: 680px) and (max-width: 862px) {
+  #game-container {
+    width: 60%;
+    gap: 2%;
+  }
+}
+
+@media(max-width: 680px) {
+    header{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .inside-header{
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .score-card {
+    height: 100px;
+    min-width: fit-content;
+    max-width: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10%;
+    margin-left: 20px;
+    flex:0;
+    text-align: ;
+  }
+  .score-card img {
+      height: 50px;
+      width: 50px;
+      margin:5px 25px 0 0;
+      position: relative;
+      right: 18px;
+    }
+    .player-2-scorecard {
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      align-self: flex-end;
+      position: relative;
+      bottom: 575px;
+      margin-right: 20px;
+    }
+    .player-2-scorecard img{
+        left: 44px;
+    }
+
+  #game-container { 
+    width: 100%;
+    gap: 6%;
+  }
+  @media(min-width: 454px) and (max-width: 540px){
+    #game-container{
+      gap: 4%;
+    }
+  }
+  @media(max-width: 454px){
+    #game-container{
+      gap: 2%;
+    }
+  }
+}
+
+
