@@ -119,7 +119,7 @@ main {
 }
 .col:hover {
   box-shadow: 0 0 20px 1px lightgrey inset;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @media (min-width: 1496px) and (max-width: 1904px) {
@@ -159,15 +159,15 @@ main {
   }
 }
 
-@media(max-width: 680px) {
-    header{
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    .inside-header{
-        justify-content: space-evenly;
-        width: 100%;
-    }
+@media (max-width: 680px) {
+  header {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .inside-header {
+    justify-content: space-evenly;
+    width: 100%;
+  }
 
   main {
     display: flex;
@@ -186,51 +186,54 @@ main {
     align-items: center;
     border-radius: 10%;
     margin-left: 20px;
-    flex:0;
+    flex: 0;
   }
   .score-card img {
-      height: 50px;
-      width: 50px;
-      margin:5px 25px 0 0;
-      position: relative;
-      right: 18px;
-    }
-    .player-2-scorecard {
-      justify-content: flex-start;
-      flex-direction: row-reverse;
-      align-self: flex-end;
-      position: relative;
-      bottom: 586px;
-      margin-right: 22px;
-    }
-    .player-2-scorecard img{
-        left: 44px;
-    }
+    height: 50px;
+    width: 50px;
+    margin: 5px 25px 0 0;
+    position: relative;
+    right: 18px;
+  }
+  .player-2-scorecard {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    position: relative;
+    bottom: 586px;
+    margin-right: 22px;
+  }
+  .player-2-scorecard img {
+    left: 44px;
+  }
 
-  #game-container { 
+  #game-container {
     width: 100%;
     gap: 6%;
+    justify-content: center;
   }
-  @media(min-width: 454px) and (max-width: 540px){
-    #game-container{
+  @media (min-width: 454px) and (max-width: 540px) {
+    #game-container {
       gap: 4%;
+      justify-content: center;
     }
   }
-  @media(min-width:390px)and (max-width: 454px){
-    #game-container{
+  @media (min-width: 390px) and (max-width: 454px) {
+    #game-container {
       gap: 2%;
+      justify-content: center;
     }
   }
-  @media(min-width:324px)and (max-width: 390px){
-    #game-container .circle{
+  @media (min-width: 324px) and (max-width: 390px) {
+    #game-container .circle {
       height: 35px;
       width: 35px;
     }
-    #game-container{
-      max-width:324px;
-      gap: 2%;
+    #game-container {
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 4%;
     }
   }
 }
-
-
